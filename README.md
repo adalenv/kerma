@@ -1,14 +1,11 @@
 # WinboxPoC
 Proof of Concept of Winbox Critical Vulnerability
 
-# Blogpost
-https://n0p.me/winbox-bug-dissection/
-
 
 ## How to use
 Run it :)
 ```
-$ python3 PoC.py 172.17.17.17
+$ ./run.sh 172.17.17.0/24
 172.17.17.17
 
 User: admin
