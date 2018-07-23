@@ -12,6 +12,7 @@ if [ -f $file ]; then
 		esac
 	done
 fi
+
 echo -e '\033[0;32mRunning nmap...\033[0m'
 
 $nmap_path -sP $1 | awk '/is up/ {print up}; {gsub (/\(|\)/,""); up = $NF}'  > tmp/output_`echo $1 | awk -F "/" '{print $1}'`.txt
