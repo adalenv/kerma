@@ -1,5 +1,4 @@
 #!/bin/bash
-clear
 grep -rn  $1  tmp/ &> /dev/null
 chk=$?
 if [ "$chk" -eq 0 ]; then

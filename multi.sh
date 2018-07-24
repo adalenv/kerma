@@ -22,4 +22,5 @@ for line in $lines; do
 	echo "-------------------------------------------" >> bambam.txt
         python3 PoC.py $line  >> bambam.txt
 done
+tail -n 10 bambam.txt
 echo "Done!"
