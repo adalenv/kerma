@@ -5,7 +5,7 @@ Proof of Concept of Winbox Critical Vulnerability
 ## How to use
 Run it :)
 ```
-$ ./run.sh 172.17.17.0/24
+$ ./kerma.sh 172.17.17.0/24
 172.17.17.17
 
 User: admin
