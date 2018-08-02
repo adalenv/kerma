@@ -7,14 +7,16 @@ echo "#          kerma             #"
 echo "#                            #"
 echo "#                            #"
 echo "##############################"
-
-if [ -z "$1" ];then
+#ip=$1
+#ip=$( zenity --entry --text "Type a range or IP " )
+ip=$(xclip -out -selection clipboard)
+if [ -z "$ip" ];then
 	echo "You must specify an IP address or a RANGE !"
 	exit 1
 fi
 
-if [[ $1 = *"/"* ]]; then
-	./multi.sh $1
+if [[ $ip = *"/"* ]]; then
+	./multi.sh $ip
 	else
-		./one.sh $1
+		./one.sh $ip
 	fi
