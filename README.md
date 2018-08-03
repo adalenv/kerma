@@ -12,6 +12,11 @@ User: admin
 Pass: Th3P4ssWord
 
 ```
+## Auto exploit copied IP
+```
+$ ./event.sh
+```
+
 ## Vulnerable versions
 all versions from 6.29 (release date: 2015/28/05) to 6.42 (release date 2018/04/20) are vulnerable ..
 
